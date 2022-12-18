@@ -1,0 +1,447 @@
+body,html{
+	margin: 0px;
+	padding: 0px;
+	font-family: bebas neue;
+	box-sizing: border-box;
+}
+.header{
+	height: 150px;
+	width: 100%;
+	background-color: #0a3c5f;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.header .logo{
+
+}
+
+.header .profile{
+
+}
+
+.logo img{
+	width: 175px;
+	height: 50px;
+}
+.username{
+
+	margin: 15px 20px 0px 0px;
+	font-size: 20px;
+}
+
+.username a{text-decoration: none;
+	color: white;	
+}
+
+.photo img, .logout img{
+	height: 50px;
+	width: 50px;
+}
+
+.profile{
+	margin-right: 100px;
+	margin-top: 50px;
+	display: flex;
+}
+.logo{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.search{
+	width: 60%;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #3283bb;
+	position: absolute;
+	top: 125px;
+	right: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search h1{
+	color: white;
+}
+
+.content{
+	width: 100%;
+	background-color: #f4f7ff;
+	padding-top: 100px;
+	min-height: 500px;
+}
+
+.deck{
+	width: 60%;	
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 200px);
+	grid-auto-rows: 1fr;
+	gap:40px;
+
+}
+
+.deck .item{
+	background-color: #dae7f0;
+	border:1px solid black;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgb(0,0,0,0.5);
+}
+.deck .item .gambar-item{
+	height: 100px;
+	overflow: hidden;
+}
+.deck .item .gambar-item a img{
+	width: 100%
+}
+.deck .item .judul{
+	display: flex;
+	height: 50%;
+	justify-content: center;
+	align-items: center;
+}
+.deck .item .judul a{
+	text-decoration: none;
+}
+.deck .item .judul a:hover{
+	text-decoration: underline;
+}
+.item a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+/*.footer{
+	position: absolute;
+	bottom: 0px;
+}*/
+.copyright_section{
+}
+
+.copyright_text{
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.logout img{
+	margin-top: 10px;
+	margin-left: 5px;
+	width: 30px;
+	height: 30px;	
+}
+
+.content-table{
+	border-collapse: collapse;
+	min-width: 400px;
+	font-size: 20px;
+	margin: 25px auto;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.content-table thead tr{
+	background-color: #3283bb;
+	text-align: left;
+	font-weight: bold;
+	color: white;
+}
+
+.content-table th,
+.content-table td{
+	padding: 12px 15px;
+}
+
+.content-table tbody tr{
+	border-bottom: 1px solid #84c4f0;
+}
+
+.content-table tbody tr:nth-of-type(even){
+	background-color: #b9e2ff;
+}
+
+.content-table tbody tr:last-of-type{
+	border-bottom: 3px solid #3283bb;
+}
+
+.btn-presensi{
+	background-color: #309bd0;
+	color: white;
+	height: 30px;
+	width: 100px;
+	border-radius: 5px; 
+	cursor: pointer;
+}
+
+.btn-presensi.inactive{
+	background-color: #b8b8b8;
+}
+
+.btn-presensi.hapus{
+	width: 200px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-presensi.hapus a{
+	text-decoration: none;
+	color: white;
+}
+.presensi{
+	display: flex;
+	width: 50%;
+	height: 30px;
+	margin: 0 auto;
+	justify-content: center;
+}
+.presensi-dosen{
+	display: flex;
+	width: 80%;
+	height: 30px;
+	margin: 0 auto 10px;
+	justify-content: flex-end;
+}
+
+.content-table.table-dosen{
+	margin: 0 100px;
+	font-size: 14px;
+}
+
+.simpan{
+	display: flex;
+	justify-content: flex-end;
+	width: 90%;
+	padding-bottom: 10px;
+}
+
+.tab_triger{
+	overflow: hidden;
+}
+
+.tab_triger ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+.tab_triger ul li{}
+.tab_triger ul li label{
+	position: relative;
+	cursor:pointer;
+	padding: 8px 15px;
+	display: block;
+	min-width: 100px;
+}
+
+.tab_container_wrap input{
+	position: absolute;
+	top: -99999px;
+}
+
+.tab_container_wrap input:checked + .tab_content_box{
+	display: block;
+}
+
+.tab_triger ul li label:hover{
+	background-color: #3283bb;
+}
+
+.tab_container_wrap input:checked~.tab_triger ul li label{
+	background-color: black;
+}
+
+.tab_content_box{
+	border: 2px solid #e2e2e2;
+	display: none;
+}
+
+.container-tab{
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid #e2e2e2;
+}
+
+.container-tab .tab_triger .slider{
+	position: absolute;
+	height: 100%;
+	width: 150px;
+	background-color: black;
+}
+
+.dac-form{
+	width: 50%;
+	margin: 0 auto;	
+	border: 1px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.div-control{
+	display: flex;
+	width: 100%;
+}
+
+.div-label,.form-control{
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+	line-height: 50px;
+}
+
+.div-label label{
+	font-size: 15px;
+}
+.form-control{
+
+}
+.form-control input,.form-control select{
+	height: 35px;
+	width: 100%;
+}
+.dac-form h2{
+	text-align: center;
+	color: #3283bb;
+}
+.dac-form button{
+	width: 100%;
+	height: 35px;	
+	background-color: #3283bb;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.content .table-matkul{
+	margin: 25px;
+	font-size: 16px;
+}
+
+.overlay{
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    transition: .8s;
+}
+
+.overlay:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    bottom :0;
+}
+
+.overlay:target .kotak_edit{
+    -webkit- animation: zoomDanFade 1s;
+    animation: zoomDanFade 1s;
+}
+.overlay:target .kotak_tambah{
+    -webkit- animation: zoomDanFade 1s;
+    animation: zoomDanFade 1s;
+}
+
+.kotak_edit,.kotak_tambah{
+	width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    padding: 20px;  
+}
+
+@keyframes zoomDanFade{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.close-btn:hover{
+    cursor: pointer;
+    color: #e50014;
+}
+
+.kotak_edit button{
+    background-color: #309bd0;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.kotak_tambah button{
+    background-color: #309bd0;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+select{
+	margin: 0;
+	padding: 0;
+}
+.kotak_edit .div-control .form-control input,select{
+	border-radius: 5px;
+	background: none;
+	padding-left: 10px;
+	color: black;
+	outline: none;
+	height: 60%;
+	box-sizing: border-box;
+}
+
+.kotak_tambah .div-control .form-control input,select{
+	border-radius: 5px;
+	background: none;
+	padding-left: 10px;
+	color: black;
+	outline: none;
+	height: 60%;
+	box-sizing: border-box;
+}
+.table-jurusan-edit{
+	font-size: 16px;
+}
+
+.btn-tambah-karyawan{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.btn-tambah-karyawan button{
+	border-radius: 5px;
+	background-color: #3283bb;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+
+.kotak_edit,.kotak_tambah h2{
+	text-align: center;
+}
+
+.kotak_edit a,.kotak_tambah a{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	text-decoration: none;
+}
